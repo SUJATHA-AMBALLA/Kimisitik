@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Kimitisik</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    /* --- quick filter button style (uses existing colors) --- */
+    .filter-buttons {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .filter-buttons button {
+      background: var(--light-gray);
+      border: none;
+      color: var(--charcoal);
+      padding: 10px 20px;
+      border-radius: 25px;
+      margin: 5px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+    .filter-buttons button.active,
+    .filter-buttons button:hover {
+      background: var(--orange);
+      color: var(--charcoal);
+    }
+    .project-card { transition: all 0.4s ease; }
+    .hidden { display: none !important; }
+  </style>
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">Kimitisik</div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="menu-label">Solutions For ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="solutions-universities.html">Universities & HEIs</a></li>
+              <li><a href="solutions-business.html">Business & Industry</a></li>
+              <li><a href="solutions-public.html">Public Sector & Hubs</a></li>
+              <li><a href="solutions-researchers.html">Researchers & Faculty</a></li>
+              <li><a href="solutions-learners.html">Learners (Summer Schools)</a></li>
+            </ul>
+          </li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="btn btn-orange">Book a Discovery Call</a>
+    </div>
+  </header>
+
+  <!-- ===== Page Hero ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Our Impact in Action</h1>
+      <p>Explore the programs and partnerships that showcase Kimitisik’s Challenge-Based Learning expertise.</p>
+    </div>
+  </section>
+
+  <!-- ===== Filter Buttons ===== -->
+  <section class="projects">
+    <div class="container">
+      <h2>A Portfolio of Real-World Solutions</h2>
+      <p>Filter by service, theme, or partner to explore our most impactful projects.</p>
+
+      <div class="filter-buttons">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="summer">Summer School</button>
+        <button data-filter="ecosystem">Ecosystem Building</button>
+        <button data-filter="faculty">Faculty Training</button>
+        <button data-filter="health">Health</button>
+        <button data-filter="urban">Urban Mobility</button>
+      </div>
+
+      <div class="project-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-category="summer urban" style="background-image:url('assets/project1.jpeg');">
+          <div class="project-overlay">
+            <h4>EIT Urban Mobility Summer School</h4>
+            <p>Partners: Riga Technical University, University of Tartu</p>
+            <a href="#" class="project-link">Learn More →</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="summer ecosystem" style="background-image:url('assets/project2.jpeg');">
+          <div class="project-overlay">
+            <h4>Resilient Cities Summer School</h4>
+            <p>Partners: STUBA (Bratislava), University of Ljubljana</p>
+            <a href="#" class="project-link">Learn More →</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="ecosystem health faculty" style="background-image:url('assets/project3.jpeg');">
+          <div class="project-overlay">
+            <h4>Improving Entrepreneurial Health Ecosystems</h4>
+            <p>Partners: TU Delft, EIT Health</p>
+            <a href="#" class="project-link">Learn More →</a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-category="faculty ecosystem" style="background-image:url('assets/workshop1.jpeg');">
+          <div class="project-overlay">
+            <h4>Faculty Train-the-Trainer Program</h4>
+            <p>Partners: Aalto University, TU/e</p>
+            <a href="#" class="project-link">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Create Impact Together?</h2>
+      <p>Let’s discuss how your organization can co-design the next Challenge-Based Learning program.</p>
+      <a href="contact.html" class="btn btn-orange">Book a Discovery Call</a>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>© 2025 Kimitisik. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== Simple Filtering Script ===== -->
+  <script>
+    const buttons = document.querySelectorAll('.filter-buttons button');
+    const cards = document.querySelectorAll('.project-card');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+
+        cards.forEach(card => {
+          const cat = card.dataset.category;
+          if (filter === 'all' || cat.includes(filter)) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

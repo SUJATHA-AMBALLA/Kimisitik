@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Kimitisik</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: 'Inter', sans-serif;
+    }
+    textarea {
+      height: 120px;
+      resize: vertical;
+    }
+    label {
+      font-weight: 600;
+      color: var(--charcoal);
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">Kimitisik</div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="menu-label">Solutions For ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="solutions-universities.html">Universities & HEIs</a></li>
+              <li><a href="solutions-business.html">Business & Industry</a></li>
+              <li><a href="solutions-public.html">Public Sector & Hubs</a></li>
+              <li><a href="solutions-researchers.html">Researchers & Faculty</a></li>
+              <li><a href="solutions-learners.html">Learners (Summer Schools)</a></li>
+            </ul>
+          </li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="btn btn-orange">Book a Discovery Call</a>
+    </div>
+  </header>
+
+  <!-- ===== Page Hero ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you. Let’s explore how we can collaborate to create impact.</p>
+    </div>
+  </section>
+
+  <!-- ===== Contact Form Section ===== -->
+  <section class="value-section">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <form action="mailto:info@kimitisik.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="Name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" required />
+
+        <label for="organization">Organization</label>
+        <input type="text" id="organization" name="Organization" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" required></textarea>
+
+        <button type="submit" class="btn btn-orange">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Contact Info Section ===== -->
+  <section class="services" style="background:#F1F1EF;">
+    <div class="container">
+      <h2>Other Ways to Reach Us</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <h4>Email</h4>
+          <p><a href="mailto:info@kimitisik.com">info@kimitisik.com</a></p>
+        </div>
+        <div class="service-card">
+          <h4>LinkedIn</h4>
+          <p><a href="https://linkedin.com/company/kimitisik" target="_blank">linkedin.com/company/kimitisik</a></p>
+        </div>
+        <div class="service-card">
+          <h4>Location</h4>
+          <p>Based in Europe — working with partners and universities worldwide.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>© 2025 Kimitisik. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

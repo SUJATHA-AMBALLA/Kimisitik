@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Kimitisik</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    /* --- Header consistency fix --- */
+    .header {
+      background: #fff;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    .header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .main-nav ul {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+    }
+
+    .main-nav a {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      color: var(--charcoal);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--orange);
+    }
+
+    .btn.btn-orange {
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 10px 18px;
+    }
+
+    /* --- Section spacing and layout --- */
+    section {
+      padding: 60px 0;
+    }
+
+    .projects h2, .value-section h2 {
+      margin-bottom: 20px;
+    }
+
+    .projects p {
+      max-width: 800px;
+      margin: 0 auto 25px;
+      text-align: center;
+      color: var(--charcoal);
+    }
+
+    /* --- About-specific tweaks --- */
+    .project-overlay p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    /* ===== Team Section ===== */
+.team-section {
+  background: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--charcoal);
+  margin-bottom: 40px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  align-items: start;
+  justify-items: center;
+}
+
+.team-card {
+  background: #f8f8f8;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 25px;
+  max-width: 340px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+.team-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.team-card h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--charcoal);
+  margin-bottom: 5px;
+}
+
+.team-card .title {
+  color: var(--orange);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.team-card p {
+  color: #444;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+  </style>
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">Kimitisik</div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="menu-label">Solutions For ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="solutions-universities.html">Universities & HEIs</a></li>
+              <li><a href="solutions-business.html">Business & Industry</a></li>
+              <li><a href="solutions-public.html">Public Sector & Hubs</a></li>
+              <li><a href="solutions-researchers.html">Researchers & Faculty</a></li>
+              <li><a href="solutions-learners.html">Learners (Summer Schools)</a></li>
+            </ul>
+          </li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="btn btn-orange">Book a Discovery Call</a>
+    </div>
+  </header>
+
+  <!-- ===== Mission Section ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>We are on a mission to bridge the gap between education and impact.</h1>
+      <p>We design, deliver, and scale Challenge-Based Learning experiences that connect Europe’s leading universities, corporations, and public-sector leaders.</p>
+      <a href="downloads/Kimitisik_Program_Overview.pdf" class="btn btn-orange" style="margin-top:20px;">Download Program Overview</a>
+    </div>
+  </section>
+
+  <!-- ===== Our Story ===== -->
+  <section class="value-section">
+    <div class="container">
+      <h2>From EIT to Global Impact</h2>
+      <p>
+        Kimitisik was founded by learners who experienced firsthand the power of applied innovation.  
+        They saw a critical need to connect academic research with real-world entrepreneurial action.  
+        Today, our team of academics, engineers, and expert facilitators operates at the intersection of education and industry, empowering people to create tangible impact.
+      </p>
+      <p style="font-size:0.9rem;color:#555;margin-top:15px;">
+        <em>Fun fact: “ki mit iszik” (‘who drinks what?’ in Hungarian) — our playful name origin — remains a small cultural note that reminds us of our collaborative roots.</em>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Team Section (Redesigned) ===== -->
+<section class="team-section">
+  <div class="container">
+    <h2>Meet Our Expert Team of Academics and Innovators</h2>
+    <div class="team-grid">
+
+      <!-- Member 1 -->
+      <div class="team-card">
+        <img src="assets/akos.png" alt="Ákos R. Wetters" />
+        <h4>Ákos R. Wetters</h4>
+        <p class="title">Co-Founder, Coach & Trainer</p>
+        <p>
+          Ákos is an expert in Challenge-Based Learning, innovation, and entrepreneurship coaching. 
+          In addition to co-founding Kimitisik, he lectures at Eindhoven University of Technology (TU/e) 
+          and Delft University of Technology (TU Delft).
+        </p>
+      </div>
+
+      <!-- Member 2 -->
+      <div class="team-card">
+        <img src="assets/adi.png" alt="Adishwar Sharma" />
+        <h4>Adishwar Sharma</h4>
+        <p class="title">Co-Founder & Innovation Facilitator</p>
+        <p>
+          Adishwar specializes in connecting research and enterprise through design thinking 
+          and challenge-driven learning. With experience across EIT programs and European 
+          innovation projects, he bridges academic rigor and entrepreneurial impact.
+        </p>
+      </div>
+
+      
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===== Explore Projects Section ===== -->
+  <section class="projects" style="background:#F1F1EF;">
+    <div class="container">
+      <h2>Explore Our Impact in Action</h2>
+      <p>Our partners and peers across Europe trust Kimitisik to co-design programs that turn education into innovation.</p>
+
+      <div class="project-grid">
+        <div class="project-card" style="background-image:url('assets/project1.jpg');">
+          <div class="project-overlay">
+            <h4>EIT Urban Mobility Summer School</h4>
+            <p>Partners: Riga Technical University, University of Tartu</p>
+          </div>
+        </div>
+        <div class="project-card" style="background-image:url('assets/project3.jpg');">
+          <div class="project-overlay">
+            <h4>Entrepreneurial Health Ecosystems</h4>
+            <p>Partners: TU Delft, EIT Health</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:30px;">
+        <a href="projects.html" class="btn btn-orange">See All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Final CTA Section ===== -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Collaborate With Us</h2>
+      <p>Ready to bring Challenge-Based Learning to your institution or organization? Let’s design something together.</p>
+      <a href="contact.html" class="btn btn-orange">Book a Discovery Call</a>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>© 2025 Kimitisik. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
