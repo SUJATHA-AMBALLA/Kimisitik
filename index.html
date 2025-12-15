@@ -10,7 +10,9 @@
 
 <body>
   <!-- ===== Header ===== -->
+
   <header class="header">
+    <div class="header-inner">
     <div class="container header-content">
       <div class="logo">Kimitisik</div>
       
@@ -19,7 +21,7 @@
           <li><a href="index.html">Home</a></li>
 
           <li class="dropdown">
-            <a href="#" class="menu-label">Solutions For ▾</a>
+            <a href="#" class="menu-label" tabindex="0">Solutions For ▾</a>
             <ul class="dropdown-content">
               <li><a href="solutions-universities.html">Universities & HEIs</a></li>
               <li><a href="solutions-business.html">Business & Industry</a></li>
@@ -37,6 +39,7 @@
 
       <a href="contact.html" class="btn btn-orange">Book a Discovery Call</a>
     </div>
+    </div>
   </header>
 
   <!-- ===== Hero Section ===== -->
@@ -53,17 +56,27 @@
   </section>
 
   <!-- ===== Trust Bar ===== -->
-  <section id="partners" class="trust-bar">
-    <div class="container">
-      <h5>Trusted by Europe’s Leading Universities and Innovation Bodies</h5>
-      <div class="logo-row">
-        <img src="assets/logo1.png" alt="EIT Urban Mobility">
-        <img src="assets/logo2.png" alt="EIT Health">
-        <img src="assets/logo3.png" alt="TU Delft">
-        <img src="assets/logo4.png" alt="Aalto University">
-        <img src="assets/logo5.png" alt="TU/e">
-        <img src="assets/logo6.png" alt="University of Ljubljana">
-      </div>
+  <section class="trust-bar">
+    <h5>Trusted by Industry Leaders</h5>
+    
+    <div class="slider">
+        <div class="slide-track">
+            
+            <div class="slide"><img src="assets/logo1.png" alt="Client 1"></div>
+            <div class="slide"><img src="assets/logo2.png" alt="Client 2"></div>
+            <div class="slide"><img src="assets/logo3.png" alt="Client 3"></div>
+            <div class="slide"><img src="assets/logo4.png" alt="Client 4"></div>
+            <div class="slide"><img src="assets/logo5.png" alt="Client 5"></div>
+            <div class="slide"><img src="assets/logo6.png" alt="Client 5"></div>
+
+            <div class="slide"><img src="assets/logo1.png" alt="Client 1"></div>
+            <div class="slide"><img src="assets/logo2.png" alt="Client 2"></div>
+            <div class="slide"><img src="assets/logo3.png" alt="Client 3"></div>
+            <div class="slide"><img src="assets/logo4.png" alt="Client 4"></div>
+            <div class="slide"><img src="assets/logo5.png" alt="Client 5"></div>
+            <div class="slide"><img src="assets/logo6.png" alt="Client 5"></div>
+
+        </div>
     </div>
   </section>
 
@@ -120,21 +133,25 @@
   <div class="container">
     <h2>Our Expertise: A Full-Service Innovation Partner</h2>
     <div class="service-grid">
+
       <div class="service-card">
-        <img src="assets/programme.png" alt="Program Design">
+        <div class="service-image"> <img src="assets/design.png" alt="Program Design"> </div>
         <h4>Program Design & Delivery</h4>
         <p>We co-create and execute end-to-end learning experiences, from 2-week EIT summer schools to full-semester courses.</p>
       </div>
+      
       <div class="service-card">
-        <img src="assets/network.png" alt="Ecosystem & Network">
+        <div class="service-image"> <img src="assets/network.png" alt="Ecosystem & Network"> </div>
         <h4>Ecosystem & Network Building</h4>
         <p>We build partnerships between universities, industry, and government to grow regional innovation ecosystems.</p>
       </div>
+      
       <div class="service-card">
-        <img src="assets/icon-train.svg" alt="Capacity Building">
+        <div class="service-image"> <img src="assets/workshop2.jpeg" alt="Capacity Building"> </div>
         <h4>Capacity Building & Train the Trainer</h4>
         <p>We upskill educators and researchers through challenge-based learning and train-the-trainer programs.</p>
       </div>
+    
     </div>
   </div>
 </section>
@@ -188,22 +205,72 @@
 </section>
 
 
-  <!-- ===== Final CTA ===== -->
-  <section id="contact" class="cta-section">
-    <div class="container">
-      <h2>Let's Build Your Next Impact Program</h2>
-      <p>Partner with us to co-design a challenge, upskill your researchers, or launch a world-class innovation program.</p>
-      <a href="contact.html" class="btn btn-orange">Book a Discovery Call</a>
-      <a href="#" class="btn btn-outline">Download Our Program Overview</a>
-    </div>
-  </section>
+<footer class="footer footer-with-cta">
+  <!-- CTA PART -->
+  <div class="footer-cta container">
+    <h2>Let's Build Your Next Impact Program</h2>
+    <p>
+      Partner with us to co-design a challenge, upskill your researchers,
+      or launch a world-class innovation program.
+    </p>
 
-  <!-- ===== Footer ===== -->
-<footer class="footer">
-  <div class="footer-bottom">
-    <p>© 2025 Kimitisik. All rights reserved.</p>
+    <div class="cta-buttons">
+      <!-- <a href="contact.html" class="btn btn-orange">Book a Discovery Call</a> -->
+      <a href="downloads/Kimitisik_Program_Overview.pdf" class="btn btn-outline" style="color: var(--orange); border: 2px solid var(--orange);" >
+        Download Our Program Overview
+      </a>
+    </div>
   </div>
+
+  <!-- FOOTER CONTENT -->
+  <div class="footer-grid container">
+
+    <!-- Column 1 -->
+    <div class="footer-about">
+      <div class="logo">Kimitisik</div>
+      <p>
+        Empowering people to unlock their entrepreneurial mindset,
+        make an impact, and keep balance in their lives.
+        15+ years of experience.
+      </p>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="solutions-universities.html">Solutions for Universities</a></li>
+        <li><a href="solutions-business.html">Solutions for Business</a></li>
+        <li><a href="projects.html">Case Studies</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>📧 info@kimitisik.eu</p>
+      <p>📍 Netherlands / Europe</p>
+
+      <div class="footer-socials">
+        <a href="#"><img src="assets/linkedinn.png" alt=""></a>
+        <a href="#"><img src="assets/Twitter.png" alt=""></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="footer-bottom container">
+    <p>© 2025 Kimitisik B.V. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+
 </footer>
+
 
 <script>
 const track = document.querySelector('.carousel-track');
@@ -232,6 +299,6 @@ setInterval(() => {
   updateSlide(currentIndex);
 }, 6000);
 </script>
-
+  
 </body>
 </html>
