@@ -64,12 +64,15 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.6rem); }
   padding: 0;
 }
 
-.logo {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--orange);
-  letter-spacing: 0.5px;
+.logo img {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+@media (max-width: 768px) {
+  .logo img {
+    height: 36px;
+  }
 }
 
 .nav ul {
@@ -1055,4 +1058,5 @@ ol {
     text-align: center;
   }
 }
+
 
