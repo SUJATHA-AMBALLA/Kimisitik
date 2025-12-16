@@ -1,6 +1,6 @@
 /* ===== Variables ===== */
 :root {
-  --orange: #F46A25;
+  --orange: #f39221;
   --charcoal: #232D4B;
   --white: #FFFFFF;
   --light-gray: #F1F1EF;
@@ -1055,3 +1055,4 @@ ol {
     text-align: center;
   }
 }
+
